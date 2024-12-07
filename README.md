@@ -1,0 +1,3 @@
+# Julia Integer Overflow Bug
+
+This repository demonstrates a common, yet subtle bug in Julia related to integer overflow. The `myfunction` in `bug.jl` calculates the square of a number if it is greater than 10; otherwise it adds 1. However, if the input is a very large integer, the square can exceed the maximum representable integer value, leading to an error. The solution in `bugSolution.jl` addresses this by using floating-point numbers for calculations which have a much larger range.
